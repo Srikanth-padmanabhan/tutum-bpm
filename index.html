@@ -27,13 +27,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: AgriCulture
-  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body class="index-page">
@@ -63,25 +57,50 @@
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li class="dropdown">
-  <a href="services.html" class="dropdown-toggle" data-bs-toggle="dropdown">
-    Core Services
+     <li class="dropdown">
+  <a href="#">
+    <span>Services</span>
+    <i class="bi bi-chevron-down toggle-dropdown"></i>
   </a>
 
-  <ul class="dropdown-menu">
-    <li>
-      <a class="dropdown-item" href="bird-control.html">Bird Control</a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="pest-control.html">Pest Control</a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="specialist-services.html">
-        Specialist Services
+  <ul>
+    <!-- Core Services -->
+    <li class="dropdown">
+      <a href="#">
+        <span>Core Services</span>
+        <i class="bi bi-chevron-down toggle-dropdown"></i>
       </a>
+
+      <ul>
+        <li><a href="bird-barrier-proofing.html">Bird Barrier Proofing</a></li>
+        <li><a href="pest-control.html">Pest Control</a></li>
+        <li><a href="pureshield-bio-clean.html">PureShield Bio-Clean</a></li>
+        <li><a href="skymasters-falconry.html">SkyMasters Falconry</a></li>
+      </ul>
+    </li>
+
+    <!-- Specialist Services -->
+    <li>
+      <a href="specialist-services.html">Specialist Services</a>
+    </li>
+
+    <!-- Additional Services -->
+    <li class="dropdown">
+      <a href="#">
+        <span>Additional Services</span>
+        <i class="bi bi-chevron-down toggle-dropdown"></i>
+      </a>
+
+      <ul>
+        <li><a href="electronic-fly-control.html">Electronic Fly Control Units</a></li>
+        <li><a href="heat-treatments.html">Heat Treatments</a></li>
+        <li><a href="humane-trapping.html">Humane Trapping</a></li>
+        <li><a href="pest-prevention.html">Pest Prevention</a></li>
+      </ul>
     </li>
   </ul>
 </li>
+
 
            <li><a href="testimonials.html">Testimonials</a></li>
           
@@ -104,18 +123,21 @@
        data-bs-ride="carousel"
        data-bs-interval="5000">
 
-    <!-- SLIDE 1 -->
-    <div class="carousel-item active">
-      <img src="assets/img/f2.png" alt="Bird & Pest Control London">
-      <div class="carousel-container text-center">
-        <h2>Tutum Bird & Pest Management Ltd</h2>
-        <p>
-          Professional, discreet and effective bird & pest control solutions
-          across London & the South East.
-        </p>
-        
-      </div>
-    </div>
+<!-- SLIDE 1 -->
+<div class="carousel-item active">
+  <img src="assets/img/f2.png" alt="Bird & Pest Control London">
+  <div class="carousel-container text-center">
+    
+    <h2>Tutum Bird & Pest Management Ltd</h2>
+
+    <!-- STRAPLINE (NEW - PROMINENT & CENTER) -->
+    <h3 class="hero-strapline">
+      Transparent • Reliable • Innovative • Accountable
+    </h3>
+
+  </div>
+</div>
+
 
     <!-- SLIDE 2 -->
     <div class="carousel-item">
@@ -155,7 +177,7 @@
 
     <!-- SLIDE 5 -->
     <div class="carousel-item">
-      <img src="assets/img/hero_5.jpg" alt="Ongoing Pest Monitoring">
+      <img src="assets/img/f4.png" alt="Ongoing Pest Monitoring">
       <div class="carousel-container text-center">
         <h2>Ongoing Monitoring & Prevention</h2>
         <p>
@@ -189,69 +211,7 @@
   </div>
 
 </section>
-<style>
-/* Section text */
-.why-choose-tutum p {
-  line-height: 1.7;
-  margin-bottom: 16px;
-  color: #444;
-}
-
-/* Right image */
-.right-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Accreditation logos */
-.accreditation-logos {
-  margin-top: 130px;              /* ⬇️ pushes logos down */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.accreditation-logos img {
-  max-height: 210px;               /* ✅ correct professional size */
-  width: auto;
-  object-fit: contain;
-}
-
-/* Key reasons */
-.key-reasons li {
-  margin-bottom: 18px;
-}
-
-.key-reasons strong {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 4px;
-}
-
-.key-reasons p {
-  margin: 0;
-  font-size: 15px;
-  color: #555;
-}
-
-/* Mobile fixes */
-@media (max-width: 991px) {
-  .right-image {
-    margin-top: 20px;
-  }
-
-  .accreditation-logos {
-    margin-top: 40px;             /* less gap on mobile */
-  }
-
-  .accreditation-logos img {
-    max-height: 60px;
-  }
-}
-</style>
+<style> /* Section text */ .why-choose-tutum p { line-height: 1.7; margin-bottom: 16px; color: #444; } /* Right image */ .right-image img { width: 100%; height: auto; object-fit: cover; } /* Accreditation logos */ .accreditation-logos { margin-top: 130px; /* ⬇️ pushes logos down */ display: flex; justify-content: center; align-items: center; gap: 32px; flex-wrap: wrap; } .accreditation-logos img { max-height: 210px; /* ✅ correct professional size */ width: auto; object-fit: contain; } /* Key reasons */ .key-reasons li { margin-bottom: 18px; } .key-reasons strong { display: block; font-size: 16px; margin-bottom: 4px; } .key-reasons p { margin: 0; font-size: 15px; color: #555; } /* Mobile fixes */ @media (max-width: 991px) { .right-image { margin-top: 20px; } .accreditation-logos { margin-top: 40px; /* less gap on mobile */ } .accreditation-logos img { max-height: 60px; } } </style>
 
 
 <section class="why-choose-tutum py-5">

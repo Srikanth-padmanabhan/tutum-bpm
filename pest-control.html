@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Testimonials - AgriCulture Bootstrap Template</title>
+  <title>Pest Control</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,16 +27,23 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: AgriCulture
+  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body class="testimonials-page">
+<body class="services-page">
 
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-<a href="index.html" class="logo d-flex align-items-center">
+
+   <a href="index.html" class="logo d-flex align-items-center">
   <img src="assets/img/newlogo.png" alt="AgriCulture" class="site-logo">
 </a>
-
 <style>
 /* FORCE logo size fix */
 .header .logo img,
@@ -47,12 +54,13 @@
   max-height: none !important;
 }
 </style>
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
      <li class="dropdown">
-  <a href="services.html">
+  <a href="services.html" class="active">
     <span>Services</span>
     <i class="bi bi-chevron-down toggle-dropdown"></i>
   </a>
@@ -96,7 +104,7 @@
 </li>
 
 
-           <li><a href="testimonials.html" class="active">Testimonials</a></li>
+           <li><a href="testimonials.html">Testimonials</a></li>
           
           
           <li><a href="contact.html">Contact</a></li>
@@ -109,119 +117,210 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
-      <div class="container position-relative">
-        <h1>Testimonials</h1>
-       
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Testimonials</li>
-          </ol>
-        </nav>
+<style>/* ================================
+   PEST CONTROL SECTION
+================================ */
+
+.pest-control-section {
+  padding: 40px 0;
+  background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+  font-family: inherit;
+}
+
+.pest-control-section .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.pc-header {
+  max-width: 820px;
+  margin-bottom: 60px;
+}
+
+.pc-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1f6f54;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.pc-header h2 {
+  font-size: 38px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.pc-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Layout */
+.pc-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  align-items: flex-start; /* 🔥 FIX */
+}
+
+/* Image */
+.pc-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Content */
+.pc-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 22px;
+}
+
+/* Services & Benefits */
+.pc-services,
+.pc-benefits {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px 28px;
+  margin-bottom: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.pc-services h3,
+.pc-benefits h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.pc-services ul,
+.pc-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pc-services li,
+.pc-benefits li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #444;
+}
+
+.pc-services li::before,
+.pc-benefits li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #1f6f54;
+  font-weight: bold;
+}
+
+/* Note */
+.pc-note {
+  font-size: 15px;
+  color: #555;
+  background: #f1f7f4;
+  padding: 18px 22px;
+  border-left: 4px solid #1f6f54;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .pc-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pc-header h2 {
+    font-size: 32px;
+  }
+}
+</style>
+
+<section class="pest-control-section">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="pc-header">
+      <span class="pc-tag">Core Services</span>
+      <h2>Pest Control</h2>
+      <p class="pc-intro">
+        Proactive pest management solutions for commercial, industrial, and
+        sensitive environments focused on prevention, compliance, and
+        long-term protection.
+      </p>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="pc-layout">
+
+      <!-- Image -->
+      <div class="pc-image">
+        <img src="assets/img/pest-control-service.jpg"
+             alt="Professional pest control service in commercial environment">
       </div>
-    </div><!-- End Page Title -->
 
-<!-- Testimonials Section -->
-<section class="testimonials-12 testimonials section" id="testimonials">
+      <!-- Content -->
+      <div class="pc-content">
+        <p>
+          Our Pest Control services deliver effective, responsible, and fully
+          compliant solutions for managing a wide range of pest risks.
+          Rather than relying solely on reactive treatments, we prioritise
+          prevention, monitoring, and risk reduction to protect people,
+          property, and operations.
+        </p>
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>TESTIMONIALS</h2>
-    <p>What our clients say about Tutum Bird & Pest Management</p>
-  </div>
-  <!-- End Section Title -->
-
-  <div class="testimonial-wrap">
-    <div class="container">
-      <div class="row">
-
-        <!-- Testimonial 1 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/esskay.png" alt="Esskay Facilities Management">
-            <blockquote>
-              <p>
-                Michael is very responsive and attends site within 48 hours of notification.
-                Quotes are provided within 24 hours of the visit, and once authorised,
-                the job is completed to a high standard within 14 days.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Esskay Facilities Management Ltd<br>
-              <span>London</span>
-            </p>
-          </div>
+        <!-- Services List -->
+        <div class="pc-services">
+          <h3>Our Pest Control Services Include</h3>
+          <ul>
+            <li>Electronic Fly Control Units (EFCUs)</li>
+            <li>Heat Treatments for insect eradication</li>
+            <li>Humane Trapping Solutions</li>
+            <li>Pest Prevention & Proofing Measures</li>
+            <li>Integrated Monitoring & Scheduled Inspections</li>
+          </ul>
         </div>
 
-        <!-- Testimonial 2 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/ark-elvin.png" alt="Ark Elvin Academy">
-            <blockquote>
-              <p>
-                We have been extremely pleased with the service provided by Tutum BPM.
-                Their professionalism, clear communication, and reliability stood out.
-                The falconry work was carried out with great care and attention to detail,
-                and we would highly recommend their services.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Ark Elvin Academy<br>
-              <span>Wembley</span>
-            </p>
-          </div>
+        <!-- Benefits -->
+        <div class="pc-benefits">
+          <h3>Key Benefits</h3>
+          <ul>
+            <li>Reduces long-term pest control costs</li>
+            <li>Minimises disruption to operations</li>
+            <li>Protects health, hygiene, and compliance standards</li>
+            <li>Prevents repeat infestations through proactive control</li>
+            <li>Flexible service delivery — contractual or reactive</li>
+          </ul>
         </div>
 
-        <!-- Testimonial 3 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/dck.png" alt="DCK Construction">
-            <blockquote>
-              <p>
-                Communication and the standard of work relating to our bird issue
-                were of a very high level. We will definitely use Tutum BPM again
-                and would recommend them to others.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Anwarzon – Project Manager<br>
-              <span>DCK Construction, London</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Testimonial 4 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/property.png" alt="Property Management Company">
-            <blockquote>
-              <p>
-                Following a bird bio-clean carried out by Tutum BPM, the quality of work
-                was outstanding. Their professionalism, attention to detail, and ability
-                to deliver excellent results while maintaining high standards were clearly evident.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Prestigious Property Management Company<br>
-              <span>London</span>
-            </p>
-          </div>
-        </div>
-
+        <p class="pc-note">
+          Every pest control programme is tailored following a detailed site
+          inspection and risk assessment, ensuring the most effective and
+          compliant solution for your environment.
+        </p>
       </div>
     </div>
   </div>
 </section>
-<!-- /Testimonials Section -->
-
-
 
 
   </main>
 
-<footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer dark-background">
 
   <div class="footer-top">
     <div class="container">

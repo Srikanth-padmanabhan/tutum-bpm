@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Testimonials - AgriCulture Bootstrap Template</title>
+  <title>Humane Trapping</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,16 +27,23 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: AgriCulture
+  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body class="testimonials-page">
+<body class="services-page">
 
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-<a href="index.html" class="logo d-flex align-items-center">
+
+   <a href="index.html" class="logo d-flex align-items-center">
   <img src="assets/img/newlogo.png" alt="AgriCulture" class="site-logo">
 </a>
-
 <style>
 /* FORCE logo size fix */
 .header .logo img,
@@ -47,12 +54,13 @@
   max-height: none !important;
 }
 </style>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="about.html">About Us</a></li>
      <li class="dropdown">
-  <a href="services.html">
+  <a href="services.html" class="active">
     <span>Services</span>
     <i class="bi bi-chevron-down toggle-dropdown"></i>
   </a>
@@ -96,7 +104,7 @@
 </li>
 
 
-           <li><a href="testimonials.html" class="active">Testimonials</a></li>
+           <li><a href="testimonials.html">Testimonials</a></li>
           
           
           <li><a href="contact.html">Contact</a></li>
@@ -109,119 +117,181 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
-      <div class="container position-relative">
-        <h1>Testimonials</h1>
-       
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Testimonials</li>
-          </ol>
-        </nav>
+<style>
+/* ================================
+   HUMANE TRAPPING SECTION
+================================ */
+
+.humane-trapping {
+  padding: 30px 0;
+  background: #ffffff;
+}
+
+.humane-trapping .section-header {
+  max-width: 750px;
+  margin-bottom: 40px;
+}
+
+.humane-trapping .section-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1f6f54;
+  margin-bottom: 10px;
+}
+
+.humane-trapping h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.humane-trapping .section-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Content text */
+.humane-trapping p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* Benefits list */
+.humane-benefits {
+  margin-top: 25px;
+}
+
+.humane-benefits li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 15.5px;
+  color: #333;
+}
+
+.humane-benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1f6f54;
+  font-weight: bold;
+}
+
+/* Ideal for box */
+.ideal-for {
+  margin-top: 30px;
+  padding: 22px;
+  background: #f6faf8;
+  border-left: 4px solid #1f6f54;
+}
+
+.ideal-for strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #1f6f54;
+}
+
+/* ================================
+   IMAGE STYLING & POSITIONING
+================================ */
+
+.humane-image {
+  position: relative;
+  top: -45px; /* lifts image on desktop */
+}
+
+.humane-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* ================================
+   RESPONSIVE FIXES
+================================ */
+
+@media (max-width: 991px) {
+  .humane-trapping {
+    padding: 70px 0;
+  }
+
+  .humane-trapping h2 {
+    font-size: 30px;
+  }
+
+  .humane-image {
+    top: 0;               /* reset image position */
+    margin-top: 30px;
+  }
+}
+</style>
+
+
+<section class="humane-trapping">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <div class="section-header">
+          <span class="section-tag">Additional Services</span>
+          <h2>Humane Trapping</h2>
+          <p class="section-intro">
+            Ethical, legal, and responsible pest control solutions designed for
+            sensitive environments and welfare-led pest management.
+          </p>
+        </div>
+
+        <p>
+          Humane Trapping is used where pests must be managed safely and ethically,
+          without risk to people, property, or non-target species. Each solution is
+          carefully selected and deployed in strict accordance with UK wildlife
+          legislation and animal welfare standards.
+        </p>
+
+        <p>
+          Our trained technicians routinely inspect and maintain all traps,
+          ensuring humane handling, controlled relocation, or responsible disposal
+          where legally required.
+        </p>
+
+        <ul class="humane-benefits">
+          <li>Non-lethal, welfare-focused pest control methods</li>
+          <li>Full compliance with UK legislation and best practice</li>
+          <li>Discreet installation and professional monitoring</li>
+          <li>Ideal where poisoning or lethal control is unsuitable</li>
+        </ul>
+
+        <div class="ideal-for">
+          <strong>Ideal for:</strong>
+          Rodents, small mammals, and sensitive locations including schools,
+          residential properties, heritage sites, and environmentally protected areas.
+        </div>
       </div>
-    </div><!-- End Page Title -->
 
-<!-- Testimonials Section -->
-<section class="testimonials-12 testimonials section" id="testimonials">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>TESTIMONIALS</h2>
-    <p>What our clients say about Tutum Bird & Pest Management</p>
-  </div>
-  <!-- End Section Title -->
-
-  <div class="testimonial-wrap">
-    <div class="container">
-      <div class="row">
-
-        <!-- Testimonial 1 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/esskay.png" alt="Esskay Facilities Management">
-            <blockquote>
-              <p>
-                Michael is very responsive and attends site within 48 hours of notification.
-                Quotes are provided within 24 hours of the visit, and once authorised,
-                the job is completed to a high standard within 14 days.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Esskay Facilities Management Ltd<br>
-              <span>London</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/ark-elvin.png" alt="Ark Elvin Academy">
-            <blockquote>
-              <p>
-                We have been extremely pleased with the service provided by Tutum BPM.
-                Their professionalism, clear communication, and reliability stood out.
-                The falconry work was carried out with great care and attention to detail,
-                and we would highly recommend their services.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Ark Elvin Academy<br>
-              <span>Wembley</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/dck.png" alt="DCK Construction">
-            <blockquote>
-              <p>
-                Communication and the standard of work relating to our bird issue
-                were of a very high level. We will definitely use Tutum BPM again
-                and would recommend them to others.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Anwarzon – Project Manager<br>
-              <span>DCK Construction, London</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Testimonial 4 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/property.png" alt="Property Management Company">
-            <blockquote>
-              <p>
-                Following a bird bio-clean carried out by Tutum BPM, the quality of work
-                was outstanding. Their professionalism, attention to detail, and ability
-                to deliver excellent results while maintaining high standards were clearly evident.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Prestigious Property Management Company<br>
-              <span>London</span>
-            </p>
-          </div>
-        </div>
-
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6 humane-image">
+        <img src="assets/img/humane-trapping.jpg"
+             alt="Humane pest trapping in a sensitive environment">
       </div>
+
     </div>
   </div>
 </section>
-<!-- /Testimonials Section -->
-
-
 
 
   </main>
 
-<footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer dark-background">
 
   <div class="footer-top">
     <div class="container">

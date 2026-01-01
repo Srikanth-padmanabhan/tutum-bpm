@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Testimonials - AgriCulture Bootstrap Template</title>
+  <title>Heat Treatments</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,16 +27,23 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: AgriCulture
+  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body class="testimonials-page">
+<body class="services-page">
 
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-<a href="index.html" class="logo d-flex align-items-center">
+
+   <a href="index.html" class="logo d-flex align-items-center">
   <img src="assets/img/newlogo.png" alt="AgriCulture" class="site-logo">
 </a>
-
 <style>
 /* FORCE logo size fix */
 .header .logo img,
@@ -47,12 +54,13 @@
   max-height: none !important;
 }
 </style>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="about.html">About Us</a></li>
      <li class="dropdown">
-  <a href="services.html">
+  <a href="services.html" class="active">
     <span>Services</span>
     <i class="bi bi-chevron-down toggle-dropdown"></i>
   </a>
@@ -96,7 +104,7 @@
 </li>
 
 
-           <li><a href="testimonials.html" class="active">Testimonials</a></li>
+           <li><a href="testimonials.html">Testimonials</a></li>
           
           
           <li><a href="contact.html">Contact</a></li>
@@ -109,119 +117,204 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
-      <div class="container position-relative">
-        <h1>Testimonials</h1>
-       
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Testimonials</li>
-          </ol>
-        </nav>
+
+<style>
+/* GLOBAL FIX */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* CONTAINER (if Bootstrap not loaded) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===============================
+   HEAT TREATMENT SECTION
+================================ */
+
+.heat-treatment-section {
+  padding: 20px 0 90px; /* top | bottom */
+}
+
+
+/* HEADER */
+.ht-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1f6f54;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.ht-header h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.section-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* GRID */
+.ht-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 50px;
+  align-items: center;
+}
+
+/* IMAGE */
+.ht-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.ht-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* BENEFITS */
+.ht-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.ht-benefits li {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 14px;
+  font-size: 15px;
+  color: #333;
+}
+
+.ht-benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1f6f54;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* IDEAL FOR BOX */
+.ht-ideal {
+  background: #f6f8f7;
+  padding: 18px 22px;
+  border-left: 4px solid #1f6f54;
+  border-radius: 6px;
+}
+
+.ht-ideal strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .ht-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ht-image {
+    margin-bottom: 30px;
+  }
+
+  .ht-header h2 {
+    font-size: 30px;
+  }
+}
+</style>
+
+<!-- HEAT TREATMENTS SECTION -->
+<section class="heat-treatment-section">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="ht-header">
+      <span class="section-tag">Additional Services</span>
+      <h2>Heat Treatments</h2>
+      <p class="section-intro">
+        Chemical-free pest eradication using advanced heat technology,
+        delivering fast, safe, and proven results across sensitive environments.
+      </p>
+    </div>
+
+    <!-- CONTENT GRID -->
+    <div class="ht-grid">
+
+      <!-- IMAGE -->
+      <div class="ht-image">
+        <img src="assets/img/heat-treatment.jpg" alt="Professional heat treatment pest control">
       </div>
-    </div><!-- End Page Title -->
 
-<!-- Testimonials Section -->
-<section class="testimonials-12 testimonials section" id="testimonials">
+      <!-- TEXT CONTENT -->
+      <div class="ht-content">
+        <p>
+          Heat Treatment is a highly effective, non-toxic method for eliminating pests
+          such as bed bugs, beetles, moths, and stored-product insects. By raising
+          temperatures to levels pests cannot survive, this solution eradicates all
+          life stages—including eggs—without the use of chemicals.
+        </p>
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>TESTIMONIALS</h2>
-    <p>What our clients say about Tutum Bird & Pest Management</p>
-  </div>
-  <!-- End Section Title -->
+        <p>
+          Our trained technicians use specialist equipment to deliver carefully
+          controlled and continuously monitored heat treatments, ensuring safety,
+          efficiency, and minimal disruption to operations.
+        </p>
 
-  <div class="testimonial-wrap">
-    <div class="container">
-      <div class="row">
+        <!-- BENEFITS -->
+        <ul class="ht-benefits">
+          <li>Eliminates pests at all life stages</li>
+          <li>No chemicals, residues, or re-entry delays</li>
+          <li>Rapid, single-treatment solution in most cases</li>
+          <li>Safe for sensitive environments and furnishings</li>
+        </ul>
 
-        <!-- Testimonial 1 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/esskay.png" alt="Esskay Facilities Management">
-            <blockquote>
-              <p>
-                Michael is very responsive and attends site within 48 hours of notification.
-                Quotes are provided within 24 hours of the visit, and once authorised,
-                the job is completed to a high standard within 14 days.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Esskay Facilities Management Ltd<br>
-              <span>London</span>
-            </p>
-          </div>
+        <!-- IDEAL FOR -->
+        <div class="ht-ideal">
+          <strong>Ideal for:</strong>
+          <p>
+            Hotels, residential blocks, care homes, transport vehicles,
+            storage facilities, and commercial premises requiring fast,
+            discreet resolution.
+          </p>
         </div>
-
-        <!-- Testimonial 2 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/ark-elvin.png" alt="Ark Elvin Academy">
-            <blockquote>
-              <p>
-                We have been extremely pleased with the service provided by Tutum BPM.
-                Their professionalism, clear communication, and reliability stood out.
-                The falconry work was carried out with great care and attention to detail,
-                and we would highly recommend their services.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Ark Elvin Academy<br>
-              <span>Wembley</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/dck.png" alt="DCK Construction">
-            <blockquote>
-              <p>
-                Communication and the standard of work relating to our bird issue
-                were of a very high level. We will definitely use Tutum BPM again
-                and would recommend them to others.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Anwarzon – Project Manager<br>
-              <span>DCK Construction, London</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Testimonial 4 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/property.png" alt="Property Management Company">
-            <blockquote>
-              <p>
-                Following a bird bio-clean carried out by Tutum BPM, the quality of work
-                was outstanding. Their professionalism, attention to detail, and ability
-                to deliver excellent results while maintaining high standards were clearly evident.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Prestigious Property Management Company<br>
-              <span>London</span>
-            </p>
-          </div>
-        </div>
-
       </div>
+
     </div>
   </div>
 </section>
-<!-- /Testimonials Section -->
-
-
 
 
   </main>
 
-<footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer dark-background">
 
   <div class="footer-top">
     <div class="container">

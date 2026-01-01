@@ -61,114 +61,570 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About Us</a></li>
-          <li class="dropdown">
-  <a href="services.html" class="dropdown-toggle" data-bs-toggle="dropdown">
-    Core Services
+     <li class="dropdown">
+  <a href="#">
+    <span>Services</span>
+    <i class="bi bi-chevron-down toggle-dropdown"></i>
   </a>
 
-  <ul class="dropdown-menu">
-    <li>
-      <a class="dropdown-item" href="bird-control.html">Bird Control</a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="pest-control.html">Pest Control</a>
-    </li>
-    <li>
-      <a class="dropdown-item" href="specialist-services.html">
-        Specialist Services
+  <ul>
+    <!-- Core Services -->
+    <li class="dropdown">
+      <a href="#">
+        <span>Core Services</span>
+        <i class="bi bi-chevron-down toggle-dropdown"></i>
       </a>
+
+      <ul>
+        <li><a href="bird-barrier-proofing.html">Bird Barrier Proofing</a></li>
+        <li><a href="pest-control.html">Pest Control</a></li>
+        <li><a href="pureshield-bio-clean.html">PureShield Bio-Clean</a></li>
+        <li><a href="skymasters-falconry.html">SkyMasters Falconry</a></li>
+      </ul>
+    </li>
+
+    <!-- Specialist Services -->
+    <li>
+      <a href="specialist-services.html">Specialist Services</a>
+    </li>
+
+    <!-- Additional Services -->
+    <li class="dropdown">
+      <a href="#">
+        <span>Additional Services</span>
+        <i class="bi bi-chevron-down toggle-dropdown"></i>
+      </a>
+
+      <ul>
+        <li><a href="electronic-fly-control.html">Electronic Fly Control Units</a></li>
+        <li><a href="heat-treatments.html">Heat Treatments</a></li>
+        <li><a href="humane-trapping.html">Humane Trapping</a></li>
+        <li><a href="pest-prevention.html">Pest Prevention</a></li>
+      </ul>
     </li>
   </ul>
 </li>
 
-          <li><a href="testimonials.html">Testimonials</a></li>
+
+           <li><a href="testimonials.html">Testimonials</a></li>
           
-        
+          
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
-      <div class="container position-relative">
-        <h1>About</h1>
-        <p>Our Mission Statement: At TBPM, our mission is to deliver effective, humane, and eco-friendly solutions for managing pest and bird issues, ensuring safe and clean environments for all our clients.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+<style>/* ================================
+   ABOUT TUTUM SECTION
+================================ */
 
-    <!-- About 3 Section -->
-    <section id="about-3" class="about-3 section">
+.about-tutum {
+  padding: 40px 0;
+  background: #f9fafb;
+}
 
+.about-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1f6f54;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.about-header h2 {
+  font-size: 38px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.about-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.about-content h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.about-points {
+  margin-top: 20px;
+}
+
+.point {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.point span {
+  color: #1f6f54;
+  font-weight: bold;
+}
+
+/* APPROACH */
+.about-approach {
+  max-width: 900px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.about-approach h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.approach-tagline {
+  font-weight: 600;
+  color: #1f6f54;
+  margin-bottom: 20px;
+}
+
+.about-approach p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* SERVICES */
+.about-services {
+  text-align: center;
+}
+
+.about-services h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.services-intro {
+  font-size: 16px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.service-item {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-weight: 500;
+  color: #333;
+}
+
+.service-note {
+  font-size: 15px;
+  color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+  
+
+<section class="about-tutum">
   <div class="container">
-    <div class="row gy-4 justify-content-between align-items-center">
+
+    <!-- HEADER -->
+    <div class="about-header">
+      <span class="section-tag">About Us</span>
+      <h2>Tutum Bird & Pest Management</h2>
+      <p class="about-intro">
+        A trusted partner delivering professional, humane, and compliant bird
+        and pest management solutions across London and the Home Counties.
+      </p>
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="about-grid">
 
       <!-- IMAGE -->
-      <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
-        <img src="assets/img/img_sq_1.jpg" alt="Tutum Bird & Pest Management" class="img-fluid">
+      <div class="about-image">
+        <img src="assets/img/about-tutum.jpg" alt="Professional bird and pest management services">
       </div>
 
       <!-- CONTENT -->
-      <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-
-        <h2 class="content-title mb-4">
-          Tutum Bird & Pest Management (TBPM)
-        </h2>
-
-        <p class="mb-3">
-          Tutum Bird & Pest Management (TBPM) provides expert bird and pest control services for commercial and industrial clients. We create safe, clean, and pest-free environments using humane, eco-friendly solutions.
-
-Our certified team combines years of industry experience with modern technology to deliver tailored, long-term pest management. We also offer a rapid, same-day response, including free, no-obligation site surveys carried out by a certified surveyor for complete reassurance.
-
-        </p>
-
-        
-
-        <h5 class="mt-4 mb-2">Our Mission</h5>
-        <p class="mb-3">
-          To deliver safe, effective, and sustainable pest and bird control solutions
-          while maintaining the highest standards of customer service, safety, and
-          environmental responsibility.
-        </p>
-
-        <h5 class="mt-4 mb-2">Environmental Commitment</h5>
-        <p class="mb-3">
-          TBPM is committed to reducing environmental impact through green products,
-          non-lethal bird control methods, and waste-reduction initiatives.
-        </p>
-
-        <h5 class="mt-4 mb-2">Our Managing Director</h5>
-        <p class="mb-4">
-          Michael Jacobs, Managing Director of TBPM, brings over 15 years of experience
-          in commercial insurance and environmental consultancy. Known for his ethical
-          and sustainable approach, he has built a strong client base across London and
-          the Home Counties and is committed to creating future employment opportunities.
+      <div class="about-content">
+        <h3>A Trusted Partner in Bird & Pest Management</h3>
+        <p>
+          Tutum Bird & Pest Management Ltd (TBPM) is a specialist provider of
+          professional bird and pest management services, supporting commercial
+          and industrial environments with safe, clean, and pest-free outcomes.
         </p>
 
         <p>
-          <a href="#contact" class="btn-cta">Get in Touch</a>
+          With deep industry knowledge and a customer-first approach, we deliver
+          effective, humane, and environmentally responsible solutions tailored
+          to each site, sector, and operational requirement.
         </p>
 
+        <div class="about-points">
+          <div class="point">
+            <span>✔</span>
+            <p>Preventative, long-term pest risk reduction</p>
+          </div>
+          <div class="point">
+            <span>✔</span>
+            <p>Minimal disruption to operations</p>
+          </div>
+          <div class="point">
+            <span>✔</span>
+            <p>Full health, safety & compliance support</p>
+          </div>
+          <div class="point">
+            <span>✔</span>
+            <p>Measurable, accountable service delivery</p>
+          </div>
+        </div>
       </div>
 
     </div>
+
+    <!-- APPROACH -->
+    <div class="about-approach">
+      <h3>Our Approach</h3>
+      <p class="approach-tagline">Consultative. Proactive. Accountable.</p>
+
+      <p>
+        Every client engagement begins with a free, no-obligation site survey
+        carried out by a certified surveyor. We assess risks, compliance
+        obligations, and long-term prevention opportunities before designing a
+        bespoke management plan.
+      </p>
+
+      <p>
+        Rather than one-size-fits-all treatments, we deliver scalable solutions
+        built on best practice, transparency, and ongoing accountability.
+      </p>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="about-services">
+      <h3>What We Do</h3>
+      <p class="services-intro">
+        We deliver specialist and additional services across retail, logistics,
+        healthcare, education, construction, property management, and public
+        sector environments.
+      </p>
+
+      <div class="services-grid">
+        <div class="service-item">Bird Control & Hazard Management</div>
+        <div class="service-item">Falconry-Based Deterrent Solutions</div>
+        <div class="service-item">Bird Proofing Systems</div>
+        <div class="service-item">General Pest Control & Prevention</div>
+        <div class="service-item">Humane Trapping Solutions</div>
+        <div class="service-item">Bio-Cleaning & Decontamination</div>
+        <div class="service-item">Monitoring, Reporting & Compliance</div>
+      </div>
+
+      <p class="service-note">
+        Services are delivered on both contractual and reactive bases, ensuring
+        flexibility and rapid response when it matters most.
+      </p>
+    </div>
+
   </div>
-
 </section>
-<!-- /About 3 Section -->
 
-    
+
+<section class="tbpm-commitment">
+  <div class="container">
+
+    <!-- ENVIRONMENT -->
+    <div class="commitment-block">
+      <div class="commitment-text">
+        <span class="section-tag">Our Commitment</span>
+        <h2>Responsible by Design</h2>
+        <p>
+          Environmental responsibility is embedded in everything we do. At TBPM,
+          effective pest control should protect people, property, and the planet
+          — without compromise.
+        </p>
+
+        <ul class="commitment-list">
+          <li>Eco-friendly and low-toxicity products</li>
+          <li>Non-lethal and humane bird control methods</li>
+          <li>Prevention-led integrated pest management</li>
+          <li>Waste reduction and responsible disposal</li>
+          <li>Continuous review of sustainable technologies</li>
+        </ul>
+      </div>
+
+      <div class="commitment-image">
+        <img src="assets/img/environmental-responsibility.jpg"
+             alt="Environmentally responsible pest management">
+      </div>
+    </div>
+
+    <!-- RAPID RESPONSE -->
+    <div class="response-block">
+      <div class="response-header">
+        <span class="section-tag">Rapid Response</span>
+        <h2>When You Need Us Most</h2>
+        <p>
+          Pest issues don’t always wait — and neither do we. Our clients value not
+          just technical expertise, but calm reassurance when it matters most.
+        </p>
+      </div>
+
+      <div class="response-grid">
+        <div class="response-item">Same-day response available</div>
+        <div class="response-item">Free, no-obligation surveys</div>
+        <div class="response-item">Clear reporting & practical advice</div>
+        <div class="response-item">Certified, experienced professionals</div>
+      </div>
+    </div>
+
+    <!-- LEADERSHIP -->
+    <div class="leadership-block">
+      <div class="leader-image">
+        <img src="assets/img/bird.jpg"
+             alt="Michael Jacobs Managing Director Tutum Bird & Pest Management">
+      </div>
+
+      <div class="leader-content">
+        <span class="section-tag">Leadership</span>
+        <h2>Meet Our Managing Director</h2>
+
+        <h3>Michael Jacobs</h3>
+        <p class="leader-title">Managing Director, Tutum Bird & Pest Management Ltd</p>
+
+        <p>
+          Michael brings a rare combination of strategic insight, technical
+          understanding, and commercial acumen to the bird and pest control sector.
+        </p>
+
+        <p>
+          Beginning his career in the commercial insurance market, Michael spent
+          over 15 years as a Senior Global Property Underwriter in the City of
+          London, advising Risk Managers, Finance Directors, and CEOs on complex,
+          high-value portfolios.
+        </p>
+
+        <p>
+          His transition into environmental markets consulting strengthened his
+          commitment to sustainability, ultimately leading to the creation of a
+          purpose-driven bird and pest management business.
+        </p>
+
+        <ul class="leader-points">
+          <li>Customer-centric, consultative leadership</li>
+          <li>Strong ethical standards and transparency</li>
+          <li>Sustainable, innovative pest management</li>
+          <li>Long-term, trusted client relationships</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FUTURE -->
+    <div class="future-block">
+      <h2>Building a Responsible Future</h2>
+      <p>
+        Looking ahead, Michael is a qualified mentor and is actively working
+        toward creating employment opportunities for individuals from less
+        advantaged backgrounds.
+      </p>
+      <p>
+        Through training, mentoring, and professional development, TBPM aims to
+        build not only a successful business — but meaningful social impact
+        within the communities it serves.
+      </p>
+    </div>
+
+    <!-- WHY TBPM -->
+    <div class="why-tbpm">
+      <h2>Why Clients Choose TBPM</h2>
+
+      <div class="why-grid">
+        <div class="why-item">Professional, certified specialists</div>
+        <div class="why-item">Ethical, humane & eco-conscious solutions</div>
+        <div class="why-item">Clear communication & accountability</div>
+        <div class="why-item">Rapid response with long-term thinking</div>
+        <div class="why-item">A partner — not just a contractor</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<style>/* ================================
+   TBPM COMMITMENT & LEADERSHIP
+================================ */
+
+.tbpm-commitment {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+/* ENVIRONMENT */
+.commitment-block {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.commitment-list {
+  margin-top: 20px;
+  padding-left: 18px;
+}
+
+.commitment-list li {
+  margin-bottom: 10px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.commitment-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* RAPID RESPONSE */
+.response-block {
+  background: #f9fafb;
+  padding: 60px;
+  border-radius: 24px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.response-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.response-item {
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-weight: 500;
+}
+
+/* LEADERSHIP */
+.leadership-block {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.leader-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.leader-title {
+  font-weight: 600;
+  color: #1f6f54;
+  margin-bottom: 15px;
+}
+
+.leader-points {
+  margin-top: 20px;
+  padding-left: 18px;
+}
+
+.leader-points li {
+  margin-bottom: 8px;
+}
+
+/* FUTURE */
+.future-block {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+/* WHY TBPM */
+.why-tbpm {
+  background: #f9fafb;
+  padding: 70px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.why-item {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .commitment-block,
+  .leadership-block {
+    grid-template-columns: 1fr;
+  }
+
+  .response-block,
+  .why-tbpm {
+    padding: 40px 25px;
+  }
+}
+</style>
   </main>
 
 <footer id="footer" class="footer dark-background">

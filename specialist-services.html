@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Specialist Services</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: AgriCulture
+  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="services-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+   <a href="index.html" class="logo d-flex align-items-center">
+  <img src="assets/img/newlogo.png" alt="AgriCulture" class="site-logo">
+</a>
+<style>
+/* FORCE logo size fix */
+.header .logo img,
+.logo img,
+.site-logo {
+  height: 90px !important;   /* 🔼 slightly increased */
+  width: auto !important;
+  max-height: none !important;
+}
+</style>
+<style>
+/* ================================
+   BIRD HAZARD MANAGEMENT SECTION
+================================ */
+
+.bird-hazard-section {
+  padding: 80px 0;
+  background: #f9fafb;
+  font-family: inherit;
+}
+
+.bird-hazard-section .section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1f6f54;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.bird-hazard-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.section-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* MAIN CONTENT GRID */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.content-text p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* IMAGE WITH PERFECT RATIO */
+.content-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.content-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RISK CARDS */
+.risk-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.risk-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.risk-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.risk-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.risk-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* GROUND NESTING */
+.ground-nesting {
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 16px;
+  margin-bottom: 70px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.ground-nesting h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.ground-nesting p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* SECTORS */
+.sectors h3 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 35px;
+  color: #222;
+}
+
+.sector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.sector-grid li {
+  background: #ffffff;
+  padding: 18px 22px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* COMPLIANCE NOTE */
+.compliance-note {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #eef5f2;
+  padding: 25px 35px;
+  border-left: 5px solid #1f6f54;
+  border-radius: 12px;
+}
+
+.compliance-note p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .bird-hazard-section h2 {
+    font-size: 30px;
+  }
+}
+</style>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+     <li class="dropdown">
+  <a href="services.html">
+    <span>Services</span>
+    <i class="bi bi-chevron-down toggle-dropdown"></i>
+  </a>
+
+  <ul>
+    <!-- Core Services -->
+    <li class="dropdown">
+      <a href="core-services.html">
+        <span>Core Services</span>
+        <i class="bi bi-chevron-down toggle-dropdown"></i>
+      </a>
+
+      <ul>
+        <li><a href="bird-barrier-proofing.html">Bird Barrier Proofing</a></li>
+        <li><a href="pest-control.html">Pest Control</a></li>
+        <li><a href="pureshield-bio-clean.html">PureShield Bio-Clean</a></li>
+        <li><a href="skymasters-falconry.html">SkyMasters Falconry</a></li>
+      </ul>
+    </li>
+
+    <!-- Specialist Services -->
+    <li>
+      <a href="specialist-services.html">Specialist Services</a>
+    </li>
+
+    <!-- Additional Services -->
+    <li class="dropdown">
+      <a href="#">
+        <span>Additional Services</span>
+        <i class="bi bi-chevron-down toggle-dropdown"></i>
+      </a>
+
+      <ul>
+        <li><a href="electronic-fly-control.html">Electronic Fly Control Units</a></li>
+        <li><a href="heat-treatments.html">Heat Treatments</a></li>
+        <li><a href="humane-trapping.html">Humane Trapping</a></li>
+        <li><a href="pest-prevention.html">Pest Prevention</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+
+
+           <li><a href="testimonials.html">Testimonials</a></li>
+          
+          
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+
+<section class="bird-hazard-section">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="section-header">
+      <span class="section-tag">Specialist Services</span>
+      <h2>Bird Hazard Management</h2>
+      <p class="section-intro">
+        Protecting people, property, and operations through humane, compliant,
+        and highly effective bird mitigation strategies.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-grid">
+
+      <!-- Left Content -->
+      <div class="content-text">
+        <p>
+          Effective Bird Hazard Management is essential in environments where bird
+          activity presents safety, hygiene, or compliance risks. Our specialist
+          services focus on bird mitigation and ground-nesting bird management,
+          delivering tailored, site-specific solutions.
+        </p>
+
+        <p>
+          Unmanaged bird presence can result in health hazards, operational disruption,
+          structural deterioration, and environmental contamination. Bird fouling is
+          highly corrosive, creates slip risks, obstructs drainage systems, and may
+          harbour harmful pathogens.
+        </p>
+
+        <p>
+          In regulated environments, failure to control bird activity can lead to
+          non-compliance with health, safety, food hygiene, and biosecurity legislation.
+        </p>
+      </div>
+
+      <!-- Right Image -->
+      <div class="content-image">
+        <img src="assets/img/bird-hazard-management.jpg" alt="Bird hazard management on industrial site">
+      </div>
+
+    </div>
+
+    <!-- Risk Cards -->
+    <div class="risk-cards">
+      <div class="risk-card">
+        <h4>Health & Safety Risks</h4>
+        <p>Slip hazards, disease transmission, and aggressive territorial behaviour.</p>
+      </div>
+      <div class="risk-card">
+        <h4>Operational Disruption</h4>
+        <p>Blocked drainage, delayed works, and restricted access to critical areas.</p>
+      </div>
+      <div class="risk-card">
+        <h4>Compliance & Legal Risk</h4>
+        <p>Breaches of wildlife protection, food hygiene, and workplace regulations.</p>
+      </div>
+    </div>
+
+    <!-- Ground Nesting -->
+    <div class="ground-nesting">
+      <h3>Ground-Nesting Bird Management</h3>
+      <p>
+        Ground-nesting birds present unique challenges across airfields, industrial
+        estates, solar farms, infrastructure sites, and open commercial land. During
+        breeding seasons, territorial behaviour can pose serious risks to personnel
+        and disrupt essential operations.
+      </p>
+      <p>
+        In aviation and transport environments, these species significantly increase
+        the risk of bird strikes—making proactive, lawful management essential.
+      </p>
+    </div>
+
+    <!-- Sectors -->
+    <div class="sectors">
+      <h3>Sectors That Benefit Most</h3>
+      <ul class="sector-grid">
+        <li>Aviation & Aerospace</li>
+        <li>Food Manufacturing & Processing</li>
+        <li>Logistics & Warehousing</li>
+        <li>Energy & Utilities</li>
+        <li>Construction & Infrastructure</li>
+        <li>Commercial & Industrial Estates</li>
+        <li>Public Sector & Transport Authorities</li>
+      </ul>
+    </div>
+
+    <!-- Compliance -->
+    <div class="compliance-note">
+      <p>
+        All bird hazard management activities are carefully planned and lawfully
+        executed, ensuring full compliance with wildlife legislation while
+        protecting biodiversity and maintaining operational continuity.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4 align-items-start">
+
+        <!-- ABOUT / CONTACT -->
+        <div class="col-lg-6 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center mb-3">
+            <span class="sitename fw-bold fs-4">TUTUM BPM</span>
+          </a>
+
+          <div class="footer-contact">
+            <p class="mb-1"><strong>Registered Address:</strong></p>
+            <p class="mb-2">66 Harold Road, London SE19 3TF</p>
+
+            <p class="mb-1">
+              <strong>Phone:</strong> <span>020 3838 8874</span>
+            </p>
+            <p class="mb-0">
+              <strong>Email:</strong> <span>enquiries@tutum-bpm.co.uk</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- FOOTER LINKS -->
+        <div class="col-lg-6 col-md-12 footer-links d-flex
+            justify-content-lg-end justify-content-start
+            align-items-center">
+
+  <ul class="footer-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Ts &amp; Cs</a></li>
+    <li><a href="#">Privacy</a></li>
+  </ul>
+
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="copyright text-center mt-4">
+    <div class="container">
+      <div>
+        Copyright © 2024 <strong>TUTUM BPM</strong> – All Rights Reserved
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

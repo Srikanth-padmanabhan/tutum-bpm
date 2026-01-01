@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Testimonials - AgriCulture Bootstrap Template</title>
+  <title>Pest Prevention</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,16 +27,23 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: AgriCulture
+  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body class="testimonials-page">
+<body class="services-page">
 
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-<a href="index.html" class="logo d-flex align-items-center">
+
+   <a href="index.html" class="logo d-flex align-items-center">
   <img src="assets/img/newlogo.png" alt="AgriCulture" class="site-logo">
 </a>
-
 <style>
 /* FORCE logo size fix */
 .header .logo img,
@@ -47,12 +54,13 @@
   max-height: none !important;
 }
 </style>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="about.html">About Us</a></li>
      <li class="dropdown">
-  <a href="services.html">
+  <a href="services.html" class="active">
     <span>Services</span>
     <i class="bi bi-chevron-down toggle-dropdown"></i>
   </a>
@@ -96,7 +104,7 @@
 </li>
 
 
-           <li><a href="testimonials.html" class="active">Testimonials</a></li>
+           <li><a href="testimonials.html">Testimonials</a></li>
           
           
           <li><a href="contact.html">Contact</a></li>
@@ -109,119 +117,219 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
-      <div class="container position-relative">
-        <h1>Testimonials</h1>
-       
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Testimonials</li>
-          </ol>
-        </nav>
+<style>
+/* ================================
+   PEST PREVENTION SECTION
+================================ */
+
+.pest-prevention {
+  padding: 40px 0;
+  background: linear-gradient(135deg, #f7faf9, #ffffff);
+}
+
+/* Header */
+.pest-prevention .section-header {
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.pest-prevention .section-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1f6f54;
+  margin-bottom: 12px;
+}
+
+.pest-prevention h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.pest-prevention .section-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* ================================
+   GRID LAYOUT (FIXED)
+================================ */
+
+.pest-prevention-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: flex-start; /* 🔥 KEY FIX: start from top */
+}
+
+/* ================================
+   IMAGE
+================================ */
+
+.pest-prevention-image {
+  position: relative;
+}
+
+.pest-prevention-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+}
+
+/* ================================
+   CONTENT
+================================ */
+
+.pest-prevention-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.pest-prevention h4 {
+  font-size: 18px;
+  margin: 30px 0 15px;
+  color: #222;
+}
+
+/* Lists */
+.pest-prevention ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pest-prevention li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 15.5px;
+  color: #444;
+}
+
+.pest-prevention li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: #1f6f54;
+  font-weight: 600;
+}
+
+/* ================================
+   IDEAL FOR BOX
+================================ */
+
+.ideal-for-box {
+  margin-top: 30px;
+  padding: 20px 24px;
+  background: #eef5f2;
+  border-left: 5px solid #1f6f54;
+  border-radius: 8px;
+}
+
+.ideal-for-box strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #1f6f54;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 991px) {
+  .pest-prevention-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pest-prevention h2 {
+    font-size: 30px;
+  }
+
+  .pest-prevention-image {
+    margin-bottom: 25px;
+  }
+}
+</style>
+
+<section class="pest-prevention">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="section-header">
+      <span class="section-tag">Additional Services</span>
+      <h2>Pest Prevention</h2>
+      <p class="section-intro">
+        Proactive protection designed to stop infestations before they start,
+        safeguarding your people, property, and operations.
+      </p>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="pest-prevention-grid">
+
+      <!-- Image -->
+      <div class="pest-prevention-image">
+        <img src="assets/img/pest-prevention.jpg"
+             alt="Professional pest prevention inspection and proofing">
       </div>
-    </div><!-- End Page Title -->
 
-<!-- Testimonials Section -->
-<section class="testimonials-12 testimonials section" id="testimonials">
+      <!-- Text Content -->
+      <div class="pest-prevention-content">
+        <p>
+          Pest Prevention focuses on identifying vulnerabilities and implementing
+          long-term control measures that prevent pests from accessing, nesting,
+          or breeding on your site.
+        </p>
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>TESTIMONIALS</h2>
-    <p>What our clients say about Tutum Bird & Pest Management</p>
-  </div>
-  <!-- End Section Title -->
+        <p>
+          Rather than relying on reactive treatment alone, our prevention programmes
+          are built around proactive strategies that reduce risk, costs, and
+          operational disruption.
+        </p>
 
-  <div class="testimonial-wrap">
-    <div class="container">
-      <div class="row">
+        <h4>Key Benefits</h4>
+        <ul>
+          <li>Reduces long-term pest control costs</li>
+          <li>Minimises disruption and downtime</li>
+          <li>Supports health, safety, and compliance obligations</li>
+          <li>Protects reputation and asset integrity</li>
+        </ul>
 
-        <!-- Testimonial 1 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/esskay.png" alt="Esskay Facilities Management">
-            <blockquote>
-              <p>
-                Michael is very responsive and attends site within 48 hours of notification.
-                Quotes are provided within 24 hours of the visit, and once authorised,
-                the job is completed to a high standard within 14 days.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Esskay Facilities Management Ltd<br>
-              <span>London</span>
-            </p>
-          </div>
+        <h4>Prevention Measures May Include</h4>
+        <ul>
+          <li>Proofing gaps, entry points, and service penetrations</li>
+          <li>Environmental and waste-management guidance</li>
+          <li>Monitoring systems and scheduled inspections</li>
+          <li>Integration with bird proofing, bio-cleaning, and falconry services</li>
+        </ul>
+
+        <div class="ideal-for-box">
+          <strong>Ideal For</strong>
+          Commercial, industrial, residential, retail, and public sector sites
+          seeking long-term pest control assurance.
         </div>
-
-        <!-- Testimonial 2 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/ark-elvin.png" alt="Ark Elvin Academy">
-            <blockquote>
-              <p>
-                We have been extremely pleased with the service provided by Tutum BPM.
-                Their professionalism, clear communication, and reliability stood out.
-                The falconry work was carried out with great care and attention to detail,
-                and we would highly recommend their services.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Ark Elvin Academy<br>
-              <span>Wembley</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/dck.png" alt="DCK Construction">
-            <blockquote>
-              <p>
-                Communication and the standard of work relating to our bird issue
-                were of a very high level. We will definitely use Tutum BPM again
-                and would recommend them to others.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Anwarzon – Project Manager<br>
-              <span>DCK Construction, London</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Testimonial 4 -->
-        <div class="col-md-6 mb-4">
-          <div class="testimonial">
-            <img src="assets/img/testimonials/property.png" alt="Property Management Company">
-            <blockquote>
-              <p>
-                Following a bird bio-clean carried out by Tutum BPM, the quality of work
-                was outstanding. Their professionalism, attention to detail, and ability
-                to deliver excellent results while maintaining high standards were clearly evident.
-              </p>
-            </blockquote>
-            <p class="client-name">
-              Prestigious Property Management Company<br>
-              <span>London</span>
-            </p>
-          </div>
-        </div>
-
       </div>
+
     </div>
   </div>
 </section>
-<!-- /Testimonials Section -->
 
 
 
 
   </main>
 
-<footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer dark-background">
 
   <div class="footer-top">
     <div class="container">
