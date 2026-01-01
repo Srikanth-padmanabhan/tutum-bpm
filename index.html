@@ -128,19 +128,41 @@
        class="carousel slide carousel-fade"
        data-bs-ride="carousel"
        data-bs-interval="5000">
+<style>.hero-title {
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
 
+.hero-values-inline {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #dfeee7;
+  text-transform: uppercase;
+}
+
+.hero-values-inline span {
+  margin: 0 10px;
+  color: #7fd1b2; /* subtle brand accent */
+}
+</style>
     <!-- SLIDE 1 -->
-    <div class="carousel-item active">
-      <img src="assets/img/f2.png" alt="Bird & Pest Control London">
-      <div class="carousel-container text-center">
-        <h2>Tutum Bird & Pest Management Ltd</h2>
-        <p>
-          Professional, discreet and effective bird & pest control solutions
-          across London & the South East.
-        </p>
-        
-      </div>
-    </div>
+<div class="carousel-item active hero-slide">
+  <img src="assets/img/f2.png" alt="Tutum Bird & Pest Management – Professional Bird & Pest Control">
+
+  <div class="carousel-container text-center">
+    <h2 class="hero-title">
+      Tutum Bird & Pest Management Ltd
+    </h2>
+
+    <p class="hero-values-inline">
+      Transparent <span>•</span> Reliable <span>•</span> Innovative <span>•</span> Accountable
+    </p>
+  </div>
+</div>
+
 
     <!-- SLIDE 2 -->
     <div class="carousel-item">
