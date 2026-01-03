@@ -27,13 +27,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: AgriCulture
-  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="about-page">
@@ -45,18 +38,348 @@
   <img src="assets/img/newlogo.png" alt="AgriCulture" class="site-logo">
 </a>
 
-<style>
+<style>/* =========================================================
+   GLOBAL FIXES
+========================================================= */
+
 /* FORCE logo size fix */
 .header .logo img,
 .logo img,
 .site-logo {
-  height: 90px !important;   /* 🔼 slightly increased */
+  height: 90px !important;
   width: auto !important;
   max-height: none !important;
 }
+
+/* Base section spacing */
+section {
+  padding: 60px 0;
+}
+
+/* Prevent double spacing between sections */
+section + section {
+  padding-top: 40px;
+}
+
+/* Remove layout stretching issues */
+main {
+  min-height: auto;
+}
+
+footer {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   ABOUT TUTUM SECTION
+========================================================= */
+
+.about-tutum {
+  padding: 40px 0;
+  background: #f9fafb;
+}
+
+.about-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1f6f54;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.about-header h2 {
+  font-size: 38px;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.about-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+
+
+/* ABOUT GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.about-content h3 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+.about-points {
+  margin-top: 16px;
+}
+
+.point {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.point span {
+  color: #1f6f54;
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   ABOUT APPROACH
+========================================================= */
+
+.about-approach {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.about-approach h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.approach-tagline {
+  font-weight: 600;
+  color: #1f6f54;
+  margin-bottom: 18px;
+}
+
+.about-approach p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+
+/* =========================================================
+   ABOUT SERVICES
+========================================================= */
+
+.about-services {
+  text-align: center;
+}
+
+.about-services h3 {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.services-intro {
+  font-size: 16px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.service-item {
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-weight: 500;
+  color: #333;
+}
+
+.service-note {
+  font-size: 15px;
+  color: #666;
+}
+
+
+/* =========================================================
+   TBPM COMMITMENT & LEADERSHIP
+========================================================= */
+
+.tbpm-commitment {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+/* ENVIRONMENT */
+.commitment-block {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.commitment-list {
+  margin-top: 18px;
+  padding-left: 18px;
+}
+
+.commitment-list li {
+  margin-bottom: 8px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.commitment-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* RAPID RESPONSE */
+.response-block {
+  background: #f9fafb;
+  padding: 50px;
+  border-radius: 24px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.response-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 26px;
+}
+
+.response-item {
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   LEADERSHIP
+========================================================= */
+
+.leadership-block {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.leader-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.leader-title {
+  font-weight: 600;
+  color: #1f6f54;
+  margin-bottom: 12px;
+}
+
+.leader-card {
+  margin-top: 24px;
+  padding: 26px;
+  background: linear-gradient(180deg, #f7faf9, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.leader-card-text {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.leader-points {
+  list-style: none;
+  padding: 0;
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.leader-points li {
+  position: relative;
+  padding-left: 28px;
+  font-size: 14.5px;
+  color: #1f3f36;
+  font-weight: 500;
+}
+
+.leader-points li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: #1f6f54;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   SOCIAL VALUE (FINAL & CORRECT)
+========================================================= */
+
+section.social-value {
+  padding-top: 5px;
+  padding-bottom: 20px; /* key fix */
+}
+
+.social-value .future-block {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .about-grid,
+  .commitment-block,
+  .leadership-block {
+    grid-template-columns: 1fr;
+  }
+
+  .response-block {
+    padding: 40px 24px;
+  }
+}
 </style>
-
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -77,7 +400,7 @@
 
       <ul>
         <li><a href="bird-barrier-proofing.html">Bird Barrier Proofing</a></li>
-        <li><a href="pest-control.html">Pest Control</a></li>
+       
         <li><a href="pureshield-bio-clean.html">PureShield Bio-Clean</a></li>
         <li><a href="skymasters-falconry.html">SkyMasters Falconry</a></li>
       </ul>
@@ -105,7 +428,7 @@
   </ul>
 </li>
 
-
+<li><a href="case-studies.html">Case Studies</a></li>
            <li><a href="testimonials.html">Testimonials</a></li>
           
           
@@ -116,342 +439,265 @@
     </div>
   </header>
 
-  <main class="main">
+<main class="main">
 
-<style>/* ================================
-   ABOUT TUTUM SECTION
-================================ */
+  <!-- ===============================
+       ABOUT TUTUM
+  =============================== -->
+  <section class="about-tutum">
+    <div class="container">
 
-.about-tutum {
-  padding: 40px 0;
-  background: #f9fafb;
-}
+      <!-- HEADER -->
+      <div class="about-header">
+        <h2>Our Mission Statement</h2>
+        <p class="about-intro">
+          Our mission is to deliver effective, humane, and eco-friendly solutions
+          for managing pest and bird issues, ensuring safe and clean environments
+          for all our clients.
+        </p>
+      </div>
 
-.about-header {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 60px;
-}
+      <!-- MAIN GRID -->
+      <div class="about-grid">
 
-.section-tag {
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #1f6f54;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
+        <!-- IMAGE -->
+        <div class="about-image">
+          <img
+            src="assets/img/about-tutum.jpg"
+            alt="Professional bird and pest management services"
+          >
+        </div>
 
-.about-header h2 {
-  font-size: 38px;
-  color: #222;
-  margin-bottom: 15px;
-}
+        <!-- CONTENT -->
+        <div class="about-content">
+          <h3>A Trusted Partner in Bird & Pest Management</h3>
 
-.about-intro {
-  font-size: 17px;
-  line-height: 1.7;
-  color: #555;
-}
+          <p>
+            Tutum is a specialist provider of professional bird and pest
+            management services, supporting commercial and industrial
+            environments with safe, clean, and pest-free outcomes.
+          </p>
 
-/* GRID */
-.about-grid {
+          <p>
+            With deep industry knowledge and a customer-first approach, we
+            deliver effective, humane, and environmentally responsible
+            solutions tailored to each site, sector, and operational
+            requirement.
+          </p>
+
+          <div class="about-points">
+            <div class="point">
+              <span>✔</span>
+              <p>Preventative, long-term pest risk reduction</p>
+            </div>
+
+            <div class="point">
+              <span>✔</span>
+              <p>Minimal disruption to operations</p>
+            </div>
+
+            <div class="point">
+              <span>✔</span>
+              <p>Full health, safety & compliance support</p>
+            </div>
+
+            <div class="point">
+              <span>✔</span>
+              <p>Measurable, accountable service delivery</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- APPROACH -->
+      <div class="about-approach">
+        <h3>Our Approach</h3>
+
+        <p>
+          Every client engagement begins with a free, no-obligation site survey
+          carried out by a certified surveyor. We assess risks, compliance
+          obligations, and long-term prevention opportunities before designing
+          a bespoke management plan.
+        </p>
+
+        <p>
+          Rather than one-size-fits-all treatments, we deliver scalable
+          solutions built on best practice, transparency, and ongoing
+          accountability.
+        </p>
+      </div>
+
+<!-- SERVICES -->
+<div class="about-services">
+  <h3>What We Do</h3>
+
+  <p class="services-intro">
+    We deliver specialist and additional services across retail,
+    logistics, healthcare, education, construction, property management,
+    and public sector environments.
+  </p>
+
+  <div class="services-grid">
+    <div class="service-item">Bird Proofing Systems</div>
+    <div class="service-item">Falconry-Based Deterrent Solutions</div>
+    <div class="service-item">Bio-Cleaning & Decontamination</div>
+    <div class="service-item">Bird Control & Hazard Management</div>
+    <div class="service-item">General Pest Control & Prevention</div>
+  </div>
+
+  <p class="service-note">
+    Services are delivered on both contractual and reactive bases,
+    ensuring flexibility and rapid response when it matters most.
+  </p>
+</div>
+<style>.services-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-  margin-bottom: 70px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
 }
 
-.about-image img {
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
-}
-
-.about-content h3 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: #222;
-}
-
-.about-content p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #444;
-  margin-bottom: 15px;
-}
-
-.about-points {
-  margin-top: 20px;
-}
-
-.point {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 10px;
-}
-
-.point span {
-  color: #1f6f54;
-  font-weight: bold;
-}
-
-/* APPROACH */
-.about-approach {
-  max-width: 900px;
-  margin: 0 auto 70px;
-  text-align: center;
-}
-
-.about-approach h3 {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.approach-tagline {
-  font-weight: 600;
-  color: #1f6f54;
-  margin-bottom: 20px;
-}
-
-.about-approach p {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #555;
-}
-
-/* SERVICES */
-.about-services {
-  text-align: center;
-}
-
-.about-services h3 {
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-
-.services-intro {
-  font-size: 16px;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto 40px;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
+/* Service card */
 .service-item {
+  width: 100%;
+  max-width: 260px;
+  padding: 22px 20px;
   background: #ffffff;
-  padding: 18px 20px;
   border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
   font-weight: 500;
-  color: #333;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
-.service-note {
-  font-size: 15px;
-  color: #666;
+/* CENTER the last item when it sits alone */
+.services-grid .service-item:last-child {
+  grid-column: 2 / span 2;
+}
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid .service-item:last-child {
+    grid-column: auto;
+  }
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .about-grid {
+@media (max-width: 480px) {
+  .services-grid {
     grid-template-columns: 1fr;
   }
 }
+
 </style>
-  
 
-<section class="about-tutum">
-  <div class="container">
-
-    <!-- HEADER -->
-    <div class="about-header">
-      <span class="section-tag">About Us</span>
-      <h2>Tutum Bird & Pest Management</h2>
-      <p class="about-intro">
-        A trusted partner delivering professional, humane, and compliant bird
-        and pest management solutions across London and the Home Counties.
-      </p>
     </div>
+  </section>
 
-    <!-- MAIN GRID -->
-    <div class="about-grid">
+  <!-- ===============================
+       COMMITMENT SECTION
+  =============================== -->
+  <section class="tbpm-commitment">
+    <div class="container">
 
-      <!-- IMAGE -->
-      <div class="about-image">
-        <img src="assets/img/about-tutum.jpg" alt="Professional bird and pest management services">
-      </div>
+      <!-- ENVIRONMENT -->
+      <div class="commitment-block">
+        <div class="commitment-text">
+          <span class="section-tag">Our Commitment</span>
+          <h2>Responsible by Design</h2>
 
-      <!-- CONTENT -->
-      <div class="about-content">
-        <h3>A Trusted Partner in Bird & Pest Management</h3>
-        <p>
-          Tutum Bird & Pest Management Ltd (TBPM) is a specialist provider of
-          professional bird and pest management services, supporting commercial
-          and industrial environments with safe, clean, and pest-free outcomes.
-        </p>
+          <p>
+            Environmental responsibility is embedded in everything we do.
+            At TUTUM, effective pest control should protect people, property,
+            and the planet — without compromise.
+          </p>
 
-        <p>
-          With deep industry knowledge and a customer-first approach, we deliver
-          effective, humane, and environmentally responsible solutions tailored
-          to each site, sector, and operational requirement.
-        </p>
+          <ul class="commitment-list">
+            <li>Eco-friendly and low-toxicity products</li>
+            <li>Non-lethal and humane bird control methods</li>
+            <li>Waste reduction and responsible disposal</li>
+            <li>Prevention-led integrated pest management</li>
+            <li>Continuous review of sustainable technologies</li>
+          </ul>
+        </div>
 
-        <div class="about-points">
-          <div class="point">
-            <span>✔</span>
-            <p>Preventative, long-term pest risk reduction</p>
-          </div>
-          <div class="point">
-            <span>✔</span>
-            <p>Minimal disruption to operations</p>
-          </div>
-          <div class="point">
-            <span>✔</span>
-            <p>Full health, safety & compliance support</p>
-          </div>
-          <div class="point">
-            <span>✔</span>
-            <p>Measurable, accountable service delivery</p>
-          </div>
+        <div class="commitment-image">
+          <img
+            src="assets/img/environmental-responsibility.jpg"
+            alt="Environmentally responsible pest management"
+          >
         </div>
       </div>
 
-    </div>
+      <!-- RAPID RESPONSE -->
+      <div class="response-block">
+        <div class="response-header">
+          <span class="section-tag">Rapid Response</span>
+          <h2>When You Need Us Most</h2>
 
-    <!-- APPROACH -->
-    <div class="about-approach">
-      <h3>Our Approach</h3>
-      <p class="approach-tagline">Consultative. Proactive. Accountable.</p>
+          <p>
+            Pest issues don’t always wait — and neither do we.
+            Our clients value not just technical expertise, but
+            calm reassurance when it matters most.
+          </p>
+        </div>
 
-      <p>
-        Every client engagement begins with a free, no-obligation site survey
-        carried out by a certified surveyor. We assess risks, compliance
-        obligations, and long-term prevention opportunities before designing a
-        bespoke management plan.
-      </p>
-
-      <p>
-        Rather than one-size-fits-all treatments, we deliver scalable solutions
-        built on best practice, transparency, and ongoing accountability.
-      </p>
-    </div>
-
-    <!-- SERVICES -->
-    <div class="about-services">
-      <h3>What We Do</h3>
-      <p class="services-intro">
-        We deliver specialist and additional services across retail, logistics,
-        healthcare, education, construction, property management, and public
-        sector environments.
-      </p>
-
-      <div class="services-grid">
-        <div class="service-item">Bird Control & Hazard Management</div>
-        <div class="service-item">Falconry-Based Deterrent Solutions</div>
-        <div class="service-item">Bird Proofing Systems</div>
-        <div class="service-item">General Pest Control & Prevention</div>
-        <div class="service-item">Humane Trapping Solutions</div>
-        <div class="service-item">Bio-Cleaning & Decontamination</div>
-        <div class="service-item">Monitoring, Reporting & Compliance</div>
+        <div class="response-grid">
+          <div class="response-item">Same-day response available</div>
+          <div class="response-item">Free, no-obligation risk assessment</div>
+          <div class="response-item">Clear reporting & practical advice</div>
+          <div class="response-item">Certified, experienced professionals</div>
+        </div>
       </div>
 
-      <p class="service-note">
-        Services are delivered on both contractual and reactive bases, ensuring
-        flexibility and rapid response when it matters most.
-      </p>
-    </div>
+      <!-- LEADERSHIP -->
+      <div class="leadership-block">
+        <div class="leader-image">
+          <img
+            src="assets/img/bird.jpg"
+            alt="Michael Jacobs, Managing Director at Tutum Bird & Pest Management"
+          >
+        </div>
 
-  </div>
-</section>
+        <div class="leader-content">
+          <span class="section-tag">Leadership</span>
+          <h2>Meet Our Managing Director</h2>
 
+          <h3>Michael Jacobs</h3>
+          <p class="leader-title">
+            Managing Director, Tutum
+          </p>
 
-<section class="tbpm-commitment">
-  <div class="container">
+          <p>
+            Michael brings a rare combination of strategic insight,
+            technical understanding, and commercial acumen to the
+            bird and pest control sector.
+          </p>
 
-    <!-- ENVIRONMENT -->
-    <div class="commitment-block">
-      <div class="commitment-text">
-        <span class="section-tag">Our Commitment</span>
-        <h2>Responsible by Design</h2>
-        <p>
-          Environmental responsibility is embedded in everything we do. At TBPM,
-          effective pest control should protect people, property, and the planet
-          — without compromise.
-        </p>
+          <p>
+            Beginning his career in the commercial insurance market,
+            Michael spent over 15 years as a Senior Global Property
+            Underwriter in the City of London, advising Risk Managers,
+            Finance Directors, and CEOs on complex, high-value portfolios.
+          </p>
 
-        <ul class="commitment-list">
-          <li>Eco-friendly and low-toxicity products</li>
-          <li>Non-lethal and humane bird control methods</li>
-          <li>Prevention-led integrated pest management</li>
-          <li>Waste reduction and responsible disposal</li>
-          <li>Continuous review of sustainable technologies</li>
-        </ul>
+          <p>
+            Prior to founding Tutum, he worked as a Contract Manager
+            for a national bird and pest control company across London,
+            managing client relationships, site surveys, quotations,
+            and project delivery. He holds the RSPH Level 2 qualification
+            in Pest Management.
+          </p>
+        </div>
       </div>
 
-      <div class="commitment-image">
-        <img src="assets/img/environmental-responsibility.jpg"
-             alt="Environmentally responsible pest management">
-      </div>
-    </div>
-
-    <!-- RAPID RESPONSE -->
-    <div class="response-block">
-      <div class="response-header">
-        <span class="section-tag">Rapid Response</span>
-        <h2>When You Need Us Most</h2>
-        <p>
-          Pest issues don’t always wait — and neither do we. Our clients value not
-          just technical expertise, but calm reassurance when it matters most.
-        </p>
-      </div>
-
-      <div class="response-grid">
-        <div class="response-item">Same-day response available</div>
-        <div class="response-item">Free, no-obligation surveys</div>
-        <div class="response-item">Clear reporting & practical advice</div>
-        <div class="response-item">Certified, experienced professionals</div>
-      </div>
-    </div>
-
-    <!-- LEADERSHIP -->
-    <div class="leadership-block">
-      <div class="leader-image">
-        <img src="assets/img/bird.jpg"
-             alt="Michael Jacobs Managing Director Tutum Bird & Pest Management">
-      </div>
-
-      <div class="leader-content">
-        <span class="section-tag">Leadership</span>
-        <h2>Meet Our Managing Director</h2>
-
-        <h3>Michael Jacobs</h3>
-        <p class="leader-title">Managing Director, Tutum Bird & Pest Management Ltd</p>
-
-        <p>
-          Michael brings a rare combination of strategic insight, technical
-          understanding, and commercial acumen to the bird and pest control sector.
-        </p>
-
-        <p>
-          Beginning his career in the commercial insurance market, Michael spent
-          over 15 years as a Senior Global Property Underwriter in the City of
-          London, advising Risk Managers, Finance Directors, and CEOs on complex,
-          high-value portfolios.
-        </p>
-
-        <p>
-          His transition into environmental markets consulting strengthened his
-          commitment to sustainability, ultimately leading to the creation of a
-          purpose-driven bird and pest management business.
+      <!-- LEADER CARD -->
+      <div class="leader-card">
+        <p class="leader-card-text">
+          His transition into environmental markets consulting strengthened
+          his commitment to sustainability, ultimately leading to the
+          creation of a purpose-driven bird and pest management business.
         </p>
 
         <ul class="leader-points">
@@ -461,171 +707,33 @@
           <li>Long-term, trusted client relationships</li>
         </ul>
       </div>
-    </div>
 
-    <!-- FUTURE -->
+    </div>
+  </section>
+
+  <!-- ===============================
+       SOCIAL VALUE
+  =============================== -->
+  <section class="social-value">
     <div class="future-block">
-      <h2>Building a Responsible Future</h2>
+      <h2>Social Value</h2>
+
       <p>
-        Looking ahead, Michael is a qualified mentor and is actively working
-        toward creating employment opportunities for individuals from less
-        advantaged backgrounds.
+        TUTUM is committed to giving back to the community through
+        practical and meaningful support.
       </p>
+
       <p>
-        Through training, mentoring, and professional development, TBPM aims to
-        build not only a successful business — but meaningful social impact
-        within the communities it serves.
+        We have carried out free general pest control services for visually
+        impaired individuals in partnership with Croydon Vision, helping
+        to ensure safe, clean, and comfortable living environments for blind
+        and partially sighted people.
       </p>
     </div>
+  </section>
 
-    <!-- WHY TBPM -->
-    <div class="why-tbpm">
-      <h2>Why Clients Choose TBPM</h2>
+</main>
 
-      <div class="why-grid">
-        <div class="why-item">Professional, certified specialists</div>
-        <div class="why-item">Ethical, humane & eco-conscious solutions</div>
-        <div class="why-item">Clear communication & accountability</div>
-        <div class="why-item">Rapid response with long-term thinking</div>
-        <div class="why-item">A partner — not just a contractor</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-<style>/* ================================
-   TBPM COMMITMENT & LEADERSHIP
-================================ */
-
-.tbpm-commitment {
-  padding: 90px 0;
-  background: #ffffff;
-}
-
-/* ENVIRONMENT */
-.commitment-block {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 60px;
-  align-items: center;
-  margin-bottom: 90px;
-}
-
-.commitment-list {
-  margin-top: 20px;
-  padding-left: 18px;
-}
-
-.commitment-list li {
-  margin-bottom: 10px;
-  color: #444;
-  line-height: 1.6;
-}
-
-.commitment-image img {
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
-}
-
-/* RAPID RESPONSE */
-.response-block {
-  background: #f9fafb;
-  padding: 60px;
-  border-radius: 24px;
-  margin-bottom: 90px;
-  text-align: center;
-}
-
-.response-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.response-item {
-  background: #fff;
-  padding: 18px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  font-weight: 500;
-}
-
-/* LEADERSHIP */
-.leadership-block {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-.leader-image img {
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
-}
-
-.leader-title {
-  font-weight: 600;
-  color: #1f6f54;
-  margin-bottom: 15px;
-}
-
-.leader-points {
-  margin-top: 20px;
-  padding-left: 18px;
-}
-
-.leader-points li {
-  margin-bottom: 8px;
-}
-
-/* FUTURE */
-.future-block {
-  max-width: 900px;
-  margin: 0 auto 80px;
-  text-align: center;
-}
-
-/* WHY TBPM */
-.why-tbpm {
-  background: #f9fafb;
-  padding: 70px;
-  border-radius: 24px;
-  text-align: center;
-}
-
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.why-item {
-  background: #ffffff;
-  padding: 18px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  font-weight: 500;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .commitment-block,
-  .leadership-block {
-    grid-template-columns: 1fr;
-  }
-
-  .response-block,
-  .why-tbpm {
-    padding: 40px 25px;
-  }
-}
-</style>
-  </main>
 
 <footer id="footer" class="footer dark-background">
 
@@ -636,7 +744,7 @@
         <!-- ABOUT / CONTACT -->
         <div class="col-lg-6 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center mb-3">
-            <span class="sitename fw-bold fs-4">TUTUM BPM</span>
+            <span class="sitename fw-bold fs-4">TUTUM</span>
           </a>
 
           <div class="footer-contact">
@@ -658,12 +766,14 @@
             align-items-center">
 
   <ul class="footer-nav">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Contact Us</a></li>
-    <li><a href="#">Ts &amp; Cs</a></li>
-    <li><a href="#">Privacy</a></li>
-  </ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="case-studies.html">Case Studies</a></li>
+  <li><a href="testimonials.html">Testimonials</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
 
 </div>
 
@@ -676,7 +786,7 @@
   <div class="copyright text-center mt-4">
     <div class="container">
       <div>
-        Copyright © 2024 <strong>TUTUM BPM</strong> – All Rights Reserved
+        Copyright © 2026 <strong>TUTUM</strong> – All Rights Reserved
       </div>
     </div>
   </div>
