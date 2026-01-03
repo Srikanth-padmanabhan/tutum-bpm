@@ -27,16 +27,247 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: AgriCulture
-  * Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  
 </head>
 
 <body class="index-page">
+<style>
+/* =====================================================
+   GLOBAL BRAND COLOR
+   HEX: #207A3D | RGB: 32,122,62
+===================================================== */
+
+/* =========================
+   LOGO SIZE FIX
+========================= */
+.header .logo img,
+.logo img,
+.site-logo {
+  height: 90px !important;
+  width: auto !important;
+  max-height: none !important;
+}
+
+.carousel-container {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-title {
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.hero-values-inline {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #e6f3ec;
+  text-transform: uppercase;
+}
+
+.hero-values-inline span {
+  margin: 0 10px;
+  color: #207A3D;
+}
+
+/* =========================
+   WHY CHOOSE TUTUM
+========================= */
+.why-choose-tutum p {
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.right-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* =========================
+   KEY REASONS
+========================= */
+.key-reasons li {
+  margin-bottom: 18px;
+}
+
+.key-reasons strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+.key-reasons p {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+}
+
+/* =========================
+   ACCREDITATION LOGOS
+========================= */
+.accreditation-logos {
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.accreditation-logos img {
+  max-height: 210px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.12));
+}
+
+/* =========================
+   MAP IMAGE – FULL VIEW (FIX)
+========================= */
+.map-wrapper {
+  width: 100%;
+  height: 420px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ✅ shows full map */
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact-section {
+  background: #f9fafb;
+}
+
+.contact-info {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.info-item i {
+  font-size: 20px;
+  color: #207A3D;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+.contact-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.contact-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.contact-form .form-control:focus {
+  border-color: #207A3D;
+  box-shadow: 0 0 0 2px rgba(32,122,62,0.15);
+}
+
+/* =========================
+   BUTTONS (BRAND ALIGNED)
+========================= */
+.btn-submit {
+  background-color: #207A3D;
+  color: #ffffff;
+  border: none;
+  padding: 14px 36px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #186333;
+  transform: translateY(-1px);
+}
+
+.btn-submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(32,122,62,0.25);
+}
+
+/* =========================
+   FORM NOTE
+========================= */
+.form-note {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* =========================
+   RESPONSIVE FIXES
+========================= */
+@media (max-width: 991px) {
+
+  .right-image {
+    margin-top: 20px;
+  }
+
+  .accreditation-logos {
+    margin-top: 40px;
+  }
+
+  .accreditation-logos img {
+    max-height: 60px;
+  }
+
+  .map-wrapper {
+    height: 300px;
+  }
+}
+</style>
+
+
 
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -44,19 +275,6 @@
 <a href="index.html" class="logo d-flex align-items-center">
   <img src="assets/img/newlogo.png" alt="AgriCulture" class="site-logo">
 </a>
-
-<style>
-/* FORCE logo size fix */
-.header .logo img,
-.logo img,
-.site-logo {
-  height: 90px !important;   /* 🔼 slightly increased */
-  width: auto !important;
-  max-height: none !important;
-}
-</style>
-
-
 
 
    <nav id="navmenu" class="navmenu">
@@ -79,7 +297,7 @@
 
       <ul>
         <li><a href="bird-barrier-proofing.html">Bird Barrier Proofing</a></li>
-        <li><a href="pest-control.html">Pest Control</a></li>
+        
         <li><a href="pureshield-bio-clean.html">PureShield Bio-Clean</a></li>
         <li><a href="skymasters-falconry.html">SkyMasters Falconry</a></li>
       </ul>
@@ -107,7 +325,7 @@
   </ul>
 </li>
 
-
+<li><a href="case-studies.html">Case Studies</a></li>
            <li><a href="testimonials.html">Testimonials</a></li>
           
           
@@ -121,52 +339,108 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+<!-- HERO SECTION -->
+<section id="hero" class="hero section dark-background">
+
+  <!-- BRAND TEXT STYLES -->
+  <style>
+    /* Hero text brand color */
+    .hero-title,
+    .carousel-container h2 {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .carousel-container p,
+    .hero-values-inline,
+    .hero-values-inline span {
+      color: rgb(246, 246, 246);
+      font-weight: 500;
+    }
+
+    .hero-values-inline {
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+  </style>
 
   <div id="hero-carousel"
        class="carousel slide carousel-fade"
        data-bs-ride="carousel"
        data-bs-interval="5000">
-<style>.hero-title {
-  font-size: clamp(36px, 5vw, 52px);
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 12px;
-}
 
-.hero-values-inline {
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  color: #dfeee7;
-  text-transform: uppercase;
-}
 
-.hero-values-inline span {
-  margin: 0 10px;
-  color: #7fd1b2; /* subtle brand accent */
-}
-</style>
-    <!-- SLIDE 1 -->
+<!-- SLIDE 1 -->
 <div class="carousel-item active hero-slide">
-  <img src="assets/img/f2.png" alt="Tutum Bird & Pest Management – Professional Bird & Pest Control">
+  <img src="assets/img/fff.png" alt="Tutum Bird & Pest Management – Professional Bird & Pest Control">
 
   <div class="carousel-container text-center">
-    <h2 class="hero-title">
-      Tutum Bird & Pest Management Ltd
-    </h2>
-
-    <p class="hero-values-inline">
-      Transparent <span>•</span> Reliable <span>•</span> Innovative <span>•</span> Accountable
-    </p>
+    <div class="hero-marquee">
+  <div class="hero-marquee-track">
+    Transparent <span class="dot">•</span>
+    Reliable <span class="dot">•</span>
+    Innovative <span class="dot">•</span>
+    Accountable
   </div>
 </div>
+
+  </div>
+</div>
+
+
+
+<style>
+/* =========================================
+   HERO TEXT – SOFT FADE + SLIDE (PRO)
+========================================= */
+
+.hero-marquee {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-marquee-track {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e9f4ef;
+
+  opacity: 0;
+  transform: translateY(14px);
+  animation: heroFadeSlide 1.4s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+/* Separator dot */
+.hero-marquee-track .dot {
+  margin: 0 14px;
+  color: #7fd1b2;
+}
+
+/* Fade + slide up */
+@keyframes heroFadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+
+
 
 
     <!-- SLIDE 2 -->
     <div class="carousel-item">
       <img src="assets/img/falcon.png" alt="Emergency Pest Control">
+
       <div class="carousel-container text-center">
         <h2>Rapid Response Pest Control</h2>
         <p>
@@ -179,6 +453,7 @@
     <!-- SLIDE 3 -->
     <div class="carousel-item">
       <img src="assets/img/f3.png" alt="Bird Control Services">
+
       <div class="carousel-container text-center">
         <h2>Expert Bird Control Solutions</h2>
         <p>
@@ -191,6 +466,7 @@
     <!-- SLIDE 4 -->
     <div class="carousel-item">
       <img src="assets/img/hero_4.jpg" alt="Eco Friendly Pest Control">
+
       <div class="carousel-container text-center">
         <h2>Eco-Friendly & Compliant Methods</h2>
         <p>
@@ -203,6 +479,7 @@
     <!-- SLIDE 5 -->
     <div class="carousel-item">
       <img src="assets/img/f4.png" alt="Ongoing Pest Monitoring">
+
       <div class="carousel-container text-center">
         <h2>Ongoing Monitoring & Prevention</h2>
         <p>
@@ -234,9 +511,7 @@
     <ol class="carousel-indicators"></ol>
 
   </div>
-
 </section>
-<style> /* Section text */ .why-choose-tutum p { line-height: 1.7; margin-bottom: 16px; color: #444; } /* Right image */ .right-image img { width: 100%; height: auto; object-fit: cover; } /* Accreditation logos */ .accreditation-logos { margin-top: 130px; /* ⬇️ pushes logos down */ display: flex; justify-content: center; align-items: center; gap: 32px; flex-wrap: wrap; } .accreditation-logos img { max-height: 210px; /* ✅ correct professional size */ width: auto; object-fit: contain; } /* Key reasons */ .key-reasons li { margin-bottom: 18px; } .key-reasons strong { display: block; font-size: 16px; margin-bottom: 4px; } .key-reasons p { margin: 0; font-size: 15px; color: #555; } /* Mobile fixes */ @media (max-width: 991px) { .right-image { margin-top: 20px; } .accreditation-logos { margin-top: 40px; /* less gap on mobile */ } .accreditation-logos img { max-height: 60px; } } </style>
 
 
 <section class="why-choose-tutum py-5">
@@ -246,290 +521,212 @@
       <!-- LEFT CONTENT -->
       <div class="col-lg-6">
 
-        <h2 class="mb-4">Why Choose Tutum BPM?</h2>
+        <h2 class="mb-4">Why Choose Tutum?</h2>
 
         <p>
           The subject of bird and pest control can be somewhat daunting, with numerous treatments and approaches to choose from.
         </p>
 
         <p>
-          Your company and colleagues are already suffering, whether it be from an infestation, a hygiene issue or perhaps a noise nuisance.
+          Your company and colleagues may already be affected—whether through an infestation, hygiene concern, or ongoing noise nuisance.
         </p>
 
         <p>
-          At <strong>Tutum Bird &amp; Pest Management (TBPM)</strong>, we discreetly take that
-          pain away with the minimum amount of disruption to your business.
+          At <strong>Tutum</strong>, we discreetly remove these problems with minimal disruption to your business operations.
         </p>
 
         <p>
-          The answer may be very simple and straightforward or may involve a multi-discipline approach.
-          Either way, we tailor a bespoke package to suit your requirements and keep you informed every step of the way.
+          The solution may be simple and straightforward, or it may require a multi-discipline approach. Either way, we design a bespoke package to suit your requirements and keep you fully informed at every stage.
         </p>
-
-        <!-- ACCREDITATION LOGOS -->
-        <div class="accreditation-logos">
-          <img src="assets/img/npta.png" alt="NPTA Accredited Member">
-          <img src="assets/img/rsph.png" alt="RSPH Accredited">
-        </div>
-
-      </div>
-
-      <!-- RIGHT IMAGE + KEY REASONS -->
-      <div class="col-lg-6">
-
-        <!-- IMAGE -->
-        <div class="right-image mb-4">
-          <img
-            src="assets/img/why-choose-tutum.jpg"
-            alt="Bird and Pest Control Services"
-            class="img-fluid rounded shadow"
-          >
-        </div>
 
         <!-- KEY REASONS -->
-        <h4 class="mb-3">Key Reasons to Choose TBPM</h4>
+        <h4 class="mt-4 mb-3">Key Reasons to Choose Tutum</h4>
 
         <ul class="list-unstyled key-reasons">
-          <li>
+          <li class="mb-3">
             <strong>Expertise &amp; Experience</strong>
             <p>Certified technicians with in-depth knowledge of bird and pest behaviour.</p>
           </li>
 
-          <li>
+          <li class="mb-3">
             <strong>Eco-Friendly Solutions</strong>
-            <p>Environmentally responsible methods that protect people and the planet.</p>
+            <p>Environmentally responsible methods that protect people, property, and the planet.</p>
           </li>
 
-          <li>
+          <li class="mb-3">
             <strong>Customer-Centric Approach</strong>
-            <p>Customised services with exceptional ongoing support.</p>
+            <p>Tailored services delivered with clear communication and ongoing support.</p>
           </li>
 
           <li>
             <strong>Proactive Monitoring</strong>
-            <p>Ongoing monitoring to prevent future infestations.</p>
+            <p>Preventative strategies and monitoring to reduce future risks.</p>
           </li>
         </ul>
 
       </div>
 
-    </div>
-  </div>
-</section>
+<!-- RIGHT ACCREDITATION LOGOS -->
+<div class="col-lg-6 d-flex justify-content-center">
 
+  <div class="accreditation-logos text-center d-flex flex-column align-items-center">
 
+    <!-- NPTA - First -->
+    <img
+      src="assets/img/npta.png"
+      alt="NPTA Accredited Member"
+      class="img-fluid mb-4"
+      style="max-width: 300px;"
+    >
 
-
-
-   
-
-   <!-- Recent Posts Section -->
-<section id="recent-posts" class="recent-posts section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Recent Posts</h2>
-    <p>Pest Control News & Insights</p>
-  </div>
-  <!-- End Section Title -->
-
-  <div class="container">
-
-    <div class="row gy-5 justify-content-center">
-
-      <!-- Post item 1 -->
-      <div class="col-xl-4 col-md-6">
-        <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="post-img position-relative overflow-hidden">
-            <img src="assets/img/blog/southbank-bird-proofing.png" class="img-fluid" alt="Summer Pest Control">
-            <span class="post-date">1 July 2025</span>
-          </div>
-
-          <div class="post-content d-flex flex-column">
-
-            <h3 class="post-title">
-              Beat the Heat & the Bite: London’s Summer Pest-Control Guide
-            </h3>
-
-            <div class="meta d-flex align-items-center">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-person"></i>
-                <span class="ps-2">Tutum BPM</span>
-              </div>
-              <span class="px-3 text-black-50">/</span>
-              <div class="d-flex align-items-center">
-                <i class="bi bi-folder2"></i>
-                <span class="ps-2">Pest Control</span>
-              </div>
-            </div>
-
-            <hr>
-
-            <p>
-              Summer in London and the Southeast brings warm weather and a surge in pest activity.
-              Fleas, ants, wasps, and flies breed rapidly in higher temperatures, while rodents
-              venture indoors following the scent of food.
-            </p>
-
-            <a href="#" class="readmore stretched-link">
-              <span>Continue Reading</span><i class="bi bi-arrow-right"></i>
-            </a>
-
-          </div>
-
-        </div>
-      </div>
-      <!-- End post item -->
-
-      <!-- Post item 2 -->
-      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="post-item position-relative h-100">
-
-          <div class="post-img position-relative overflow-hidden">
-            <img src="assets/img/blog/summer-pest-control.png" class="img-fluid" alt="Southbank Bird Proofing">
-            <span class="post-date">1 July 2025</span>
-          </div>
-
-          <div class="post-content d-flex flex-column">
-
-            <h3 class="post-title">
-              Tutum Takes Flight on Southbank: Bird-Proofing the Royal Festival Hall
-            </h3>
-
-            <div class="meta d-flex align-items-center">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-person"></i>
-                <span class="ps-2">Tutum BPM</span>
-              </div>
-              <span class="px-3 text-black-50">/</span>
-              <div class="d-flex align-items-center">
-                <i class="bi bi-folder2"></i>
-                <span class="ps-2">Bird Control</span>
-              </div>
-            </div>
-
-            <hr>
-
-            <p>
-              Victoria Embankment’s Royal Festival Hall is one of London’s most iconic landmarks.
-              In 2025, its façade was under siege from urban wildlife, with birds turning ledges
-              into personal perches.
-            </p>
-
-            <a href="#" class="readmore stretched-link">
-              <span>Continue Reading</span><i class="bi bi-arrow-right"></i>
-            </a>
-
-          </div>
-
-        </div>
-      </div>
-      <!-- End post item -->
-
-    </div>
+    <!-- RSPH - Second -->
+    <img
+      src="assets/img/rsph.png"
+      alt="RSPH Accredited"
+      class="img-fluid"
+      style="max-width: 300px;"
+    >
 
   </div>
 
-</section>
-<!-- /Recent Posts Section -->
-
-   
-
-<!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <div class="mb-5">
-  <iframe
-    width="100%"
-    height="400"
-    style="border:0;"
-    loading="lazy"
-    allowfullscreen
-    referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.09587902247!2d-0.0874698!3d51.4185721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876014e771586d1%3A0xf3c3ceec6f1b7c73!2s66%20Harold%20Rd%2C%20London%20SE19%203TF%2C%20UK!5e0!3m2!1sen!2sin!4v1735560000000">
-  </iframe>
 </div>
-<!-- End Google Maps -->
-
-
-      <div class="container" data-aos="fade">
-
-        <div class="row gy-5 gx-lg-5">
-
-          <div class="col-lg-4">
-
-            <div class="info">
-              <h3>Get in touch</h3>
-              <p>The quickest way to find a solution is to talk to us
 
 
 
-We may need to arrange a visit to carry out a survey which is free of charge
 
 
+    </div>
+  </div>
+</section>
 
-Click below and get in touch now for a rapid response to discuss your requirements</p>
 
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Location:</h4>
-                  <p>66 Harold Road, London SE19 3TF</p>
-                </div>
-              </div><!-- End Info Item -->
+   
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section py-5">
+  <div class="container" data-aos="fade-up">
 
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Email:</h4>
-                  <p>enquiries@tutum-bpm.co.uk</p>
-                </div>
-              </div><!-- End Info Item -->
+    <div class="row g-5 align-items-stretch">
 
-              <div class="info-item d-flex">
-                <i class="bi bi-phone flex-shrink-0"></i>
-                <div>
-                  <h4>Call:</h4>
-                  <p>020 3838 8874</p>
-                </div>
-              </div><!-- End Info Item -->
+      <!-- LEFT IMAGE + INFO -->
+      <div class="col-lg-4">
+        <div class="contact-left">
 
+          <!-- IMAGE
+          <div class="contact-image">
+            <img src="assets/img/map"
+                 alt="Tutum Bird & Pest Management consultation">
+          </div> -->
+
+          <!-- INFO -->
+          <div class="contact-info">
+            <h3>Contact Us for a Free Consultation</h3>
+            <p>Let’s discuss your requirements and find the right solution for your site.</p>
+
+            <div class="info-item">
+              <i class="bi bi-geo-alt"></i>
+              <div>
+                <h5>Location</h5>
+                <p>66 Harold Road, London SE19 3TF</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bi bi-envelope"></i>
+              <div>
+                <h5>Email</h5>
+                <p>enquiries@tutum-bpm.co.uk</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bi bi-phone"></i>
+              <div>
+                <h5>Call</h5>
+                <p>020 3838 8874</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="col-lg-8">
+        <form class="contact-form">
+
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <label>Name *</label>
+              <input type="text" class="form-control"
+                     placeholder="Your full name" required>
+            </div>
+
+            <div class="col-md-6">
+              <label>Email *</label>
+              <input type="email" class="form-control"
+                     placeholder="your@email.com" required>
+            </div>
+
+            <div class="col-md-6">
+              <label>Company Name (if applicable)</label>
+              <input type="text" class="form-control"
+                     placeholder="Company name">
+            </div>
+
+            <div class="col-md-6">
+              <label>Telephone *</label>
+              <input type="tel" class="form-control"
+                     placeholder="Your contact number" required>
+            </div>
+
+            <div class="col-md-6">
+              <label>When do you want to start?</label>
+              <select class="form-control">
+                <option>Select an option</option>
+                <option>Immediately</option>
+                <option>Within 1 month</option>
+                <option>1–3 months</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label>Postcode *</label>
+              <input type="text" class="form-control"
+                     placeholder="Postcode" required>
+            </div>
+
+            <div class="col-12">
+              <label>Message *</label>
+              <textarea class="form-control" rows="5"
+                        placeholder="Tell us briefly how we can help you..."
+                        required></textarea>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn-submit">
+                Submit Enquiry
+              </button>
+              <p class="form-note">
+                We’ll review your enquiry and get back to you as soon as possible.
+              </p>
             </div>
 
           </div>
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
+        </form>
       </div>
 
-    </section><!-- /Contact Section -->
+    </div>
+  </div>
+</section>
+
+
   </main>
+
+
+
+
 <footer id="footer" class="footer dark-background">
 
   <div class="footer-top">
@@ -539,7 +736,7 @@ Click below and get in touch now for a rapid response to discuss your requiremen
         <!-- ABOUT / CONTACT -->
         <div class="col-lg-6 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center mb-3">
-            <span class="sitename fw-bold fs-4">TUTUM BPM</span>
+            <span class="sitename fw-bold fs-4">TUTUM</span>
           </a>
 
           <div class="footer-contact">
@@ -561,12 +758,14 @@ Click below and get in touch now for a rapid response to discuss your requiremen
             align-items-center">
 
   <ul class="footer-nav">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Contact Us</a></li>
-    <li><a href="#">Ts &amp; Cs</a></li>
-    <li><a href="#">Privacy</a></li>
-  </ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="case-studies.html">Case Studies</a></li>
+  <li><a href="testimonials.html">Testimonials</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
 
 </div>
 
@@ -579,7 +778,7 @@ Click below and get in touch now for a rapid response to discuss your requiremen
   <div class="copyright text-center mt-4">
     <div class="container">
       <div>
-        Copyright © 2024 <strong>TUTUM BPM</strong> – All Rights Reserved
+        Copyright © 2026 <strong>TUTUM</strong> – All Rights Reserved
       </div>
     </div>
   </div>
